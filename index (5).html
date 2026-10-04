@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao diện Facebook Giản Lược</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- 1. FIXED HEADER -->
+    <header class="header">
+        <div class="header-left">
+            <div class="logo"><i class="fa-brands fa-facebook"></i></div>
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Tìm kiếm trên Facebook">
+            </div>
+        </div>
+        <div class="header-center">
+            <a href="#" class="nav-icon active"><i class="fa-solid fa-house"></i></a>
+            <a href="#" class="nav-icon"><i class="fa-solid fa-tv"></i></a>
+            <a href="#" class="nav-icon"><i class="fa-solid fa-store"></i></a>
+            <a href="#" class="nav-icon"><i class="fa-solid fa-users"></i></a>
+        </div>
+        <div class="header-right">
+            <div class="icon-btn"><i class="fa-solid fa-bars"></i></div>
+            <div class="icon-btn"><i class="fa-brands fa-facebook-messenger"></i></div>
+            <div class="icon-btn"><i class="fa-solid fa-bell"></i></div>
+            <div class="user-avatar">
+                <img src="https://via.placeholder.com/40" alt="Avatar">
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <div class="main-container">
+        <!-- 2. SIDEBAR LEFT -->
+        <aside class="sidebar-left">
+            <ul>
+                <li class="active"><i class="fa-solid fa-user"></i> <span>Nguyễn Văn A</span></li>
+                <li><i class="fa-solid fa-user-group"></i> <span>Bạn bè</span></li>
+                <li><i class="fa-solid fa-clock-rotate-left"></i> <span>Kỷ niệm</span></li>
+                <li><i class="fa-solid fa-bookmark"></i> <span>Đã lưu</span></li>
+                <li><i class="fa-solid fa-people-group"></i> <span>Nhóm</span></li>
+                <li><i class="fa-solid fa-store"></i> <span>Marketplace</span></li>
+                <li><i class="fa-solid fa-tv"></i> <span>Feeds</span></li>
+            </ul>
+        </aside>
+
+        <!-- 3. MAIN CONTENT (NEWS FEED) -->
+        <main class="feed">
+            <!-- Create Post Box -->
+            <div class="card create-post">
+                <div class="create-post-top">
+                    <img src="https://via.placeholder.com/40" alt="Avatar" class="avatar">
+                    <input type="text" placeholder="Bạn đang nghĩ gì thế?">
+                </div>
+                <div class="create-post-bottom">
+                    <button><i class="fa-solid fa-video text-red"></i> Video trực tiếp</button>
+                    <button><i class="fa-solid fa-images text-green"></i> Ảnh/video</button>
+                    <button><i class="fa-solid fa-face-smile text-yellow"></i> Cảm xúc/hành động</button>
+                </div>
+            </div>
+
+            <!-- Post 1 -->
+            <div class="card post">
+                <div class="post-header">
+                    <img src="https://via.placeholder.com/40" alt="Avatar" class="avatar">
+                    <div class="post-info">
+                        <h4>Lập trình Web Frontend</h4>
+                        <span>2 giờ trước · <i class="fa-solid fa-earth-americas"></i></span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>Hoàn thành bài tập tạo giao diện Facebook giản lược với Fixed Header và Sidebar trong CSS! 🚀🎉</p>
+                </div>
+                <div class="post-actions">
+                    <button><i class="fa-regular fa-thumbs-up"></i> Thích</button>
+                    <button><i class="fa-regular fa-message"></i> Bình luận</button>
+                    <button><i class="fa-solid fa-share"></i> Chia sẻ</button>
+                </div>
+            </div>
+
+            <!-- Post 2 -->
+            <div class="card post">
+                <div class="post-header">
+                    <img src="https://via.placeholder.com/40" alt="Avatar" class="avatar">
+                    <div class="post-info">
+                        <h4>CodeGym Community</h4>
+                        <span>5 giờ trước · <i class="fa-solid fa-earth-americas"></i></span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>Luyện tập kĩ năng bố cục CSS với position: fixed và flexbox để dễ dàng thiết kế các trang giao diện phức tạp.</p>
+                </div>
+                <div class="post-actions">
+                    <button><i class="fa-regular fa-thumbs-up"></i> Thích</button>
+                    <button><i class="fa-regular fa-message"></i> Bình luận</button>
+                    <button><i class="fa-solid fa-share"></i> Chia sẻ</button>
+                </div>
+            </div>
+        </main>
+
+        <!-- 4. SIDEBAR RIGHT -->
+        <aside class="sidebar-right">
+            <div class="sidebar-title">
+                <h4>Người liên hệ</h4>
+            </div>
+            <ul class="contact-list">
+                <li><img src="https://via.placeholder.com/32" alt="Contact"> <span>Trần Văn B</span></li>
+                <li><img src="https://via.placeholder.com/32" alt="Contact"> <span>Lê Thị C</span></li>
+                <li><img src="https://via.placeholder.com/32" alt="Contact"> <span>Phạm Văn D</span></li>
+                <li><img src="https://via.placeholder.com/32" alt="Contact"> <span>Hoàng Thị E</span></li>
+            </ul>
+        </aside>
+    </div>
+
+</body>
+</html>
